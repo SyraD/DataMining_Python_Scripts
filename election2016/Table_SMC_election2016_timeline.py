@@ -2,6 +2,7 @@
 Datamining Twitter Content About the 2015 election
 
 Credits:
+
 Base code by Dr. Gregory Saxton. Twitter: @gregorysaxton, website: social-metrics.org
 Modifications to focus on the election 
 by Dr. Weiai Wayne Twitter: @cosmopolitanvan, website: curiositybits.com
