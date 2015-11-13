@@ -22,13 +22,13 @@ from WriteTable_SMC_election2016_timeline import write_data
 
 class Scrape:
     def __init__(self):
-        engine = sqlalchemy.create_engine("sqlite:///C:/Users/wayne/Dropbox/Acer Laptop Sync/Data Science/The SMC Model/SMC_election2016/Data_mining_Python_Twitter_SMC_election2016/Python Scripts/candidate_timeline.sqlite", echo=False)   #ABSOLUTE PATH TO DB
+        engine = sqlalchemy.create_engine("sqlite:///C:/Users/MODIFY.sqlite", echo=False)   #ABSOLUTE PATH TO DB
         Session = sessionmaker(bind=engine)
         self.session = Session()  
         Base.metadata.create_all(engine)
         
     def run(self):
-        code = ast.parse(open("C:/Users/wayne/Dropbox/Acer Laptop Sync/Data Science/The SMC Model/SMC_election2016/Data_mining_Python_Twitter_SMC_election2016/Python Scripts/Iteration_SMC_election2016.py").read())                        
+        code = ast.parse(open("C:/Users/MODIFY/PyScripts/Iteration_SMC_election2016.py").read())                        
         eval(compile(code, '', 'exec'))
         
 
