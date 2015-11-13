@@ -46,10 +46,11 @@ ids = ['%23@JebBush',
        ] # enter your search terms
 from textblob import TextBlob
 from twython import Twython
-t = Twython(app_key='p62ihWw16nMwsCSIkzfSQA',       #REPLACE 'APP_KEY' WITH YOUR APP KEY, ETC., IN THE NEXT 4 LINES
-    app_secret='UMKDhssW1ev1ESdBFa7hYG5yeN10V0GCSDMh7wkH0',
-    oauth_token='17917334-TuWYfmlE251Ew5auUM6Jfm9GMRHWJXzclWNPGCFmM',
-    oauth_token_secret='tHqOHqOxAqUaXHWlkXQ99HBQ7NVIXOrwvTRiH5cnsNE')
+
+import sys
+sys.path.insert(0, './Imports') #adds Imports folder to path
+from Keys import * #import all variables stored in Imports/Keys.py 
+
 
 Base = declarative_base()
 
